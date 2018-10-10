@@ -266,7 +266,7 @@ height:30vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">494</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                        <span>Word count: <span class="post-count word-count">488</span>Reading time: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -397,57 +397,14 @@ height:30vh;
     <article class="article-entry">
         <h3 id="10-8-2018-kadane’s-algorithm"><a href="#10-8-2018-kadane’s-algorithm" class="headerlink" title="10/8/2018 kadane’s algorithm"></a>10/8/2018 kadane’s algorithm</h3><hr>
 <p>kadane’s algorithm (finding Maximum Subarray)<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxSubArray</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">     	<span class="keyword">int</span> max_so_far = INT_MIN, max_ending_here = <span class="number">0</span>; </span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.size(); i++) </span><br><span class="line">        &#123; </span><br><span class="line">            max_ending_here = max_ending_here + nums[i]; </span><br><span class="line">            <span class="keyword">if</span> (max_so_far &lt; max_ending_here) </span><br><span class="line">                max_so_far = max_ending_here; </span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (max_ending_here &lt; <span class="number">0</span>) </span><br><span class="line">                max_ending_here = <span class="number">0</span>; </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">return</span> max_so_far; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<hr>
 <p>kadane’s algorithm is also capable for finding the biggest difference of an array(leetcode 121)<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> max_here = <span class="number">0</span>, max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; prices.size(); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            max_here += (prices[i] - prices[i - <span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">if</span> (max_here &lt; <span class="number">0</span>)</span><br><span class="line">                max_here = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span> (max_here &gt; max)</span><br><span class="line">                max = max_here;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <hr>
 <pre><code>[7,1,5,3,6,4]
 </code></pre><p>becomes    [-6,4,-2,3,-2]<br>Max subarray is 4,-2,3 = 5</p>
 <h3 id="10-9-2018"><a href="#10-9-2018" class="headerlink" title="10/9/2018"></a>10/9/2018</h3><p>Moore’s voting algorithm (finding the majority elements in an array)<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> major = nums[<span class="number">0</span>], count = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (nums.size() == <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.size(); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] == major)</span><br><span class="line">                count++;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                count--;</span><br><span class="line">            <span class="keyword">if</span> (count == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                count++;</span><br><span class="line">                major = nums[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> major;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<p>Factorial Trailing Zeroes<br>Given a factorial number, finds how many zeros are there at the end of that number<br>This is a very good explanation from leetcode discuss channel:</p>
+<h2 id="Factorial-Trailing-Zeroes"><a href="#Factorial-Trailing-Zeroes" class="headerlink" title="Factorial Trailing Zeroes"></a>Factorial Trailing Zeroes</h2><p>Given a factorial number, finds how many zeros are there at the end of that number<br>This is a very good explanation from leetcode discuss channel:</p>
 <blockquote>
-<p>The ZERO comes from 10.<br>Since 10 = 2 * 5</p>
-</blockquote>
-<blockquote>
-<p>How many multiples of 5 are there in the numbers from 1 to 100?</p>
-</blockquote>
-<blockquote>
-<p>because 100 ÷ 5 = 20, so, there are twenty multiples of 5 between 1 and 100.</p>
-</blockquote>
-<blockquote>
-<p>but wait, actually 25 is 5×5, so each multiple of 25 has an extra factor of 5, e.g. 25 × &gt;4 = 100，which introduces extra of zero.</p>
-</blockquote>
-<blockquote>
-<p>So, we need know how many multiples of 25 are between 1 and 100? Since 100 ÷ 25 = 4, &gt;there are four multiples of 25 between 1 and 100.</p>
-</blockquote>
-<blockquote>
-<p>Finally, we get 20 + 4 = 24 trailing zeroes in 100!</p>
-</blockquote>
-<blockquote>
-<p>The above example tell us, we need care about 5, 5×5, 5×5×5, 5×5×5×5 ….</p>
-</blockquote>
-<blockquote>
-<p>By given number 4617.</p>
-</blockquote>
-<blockquote>
-<p>5^1 : 4617 ÷ 5 = 923.4, so we get 923 factors of 5</p>
-</blockquote>
-<blockquote>
-<p>5^2 : 4617 ÷ 25 = 184.68, so we get 184 additional factors of 5</p>
-</blockquote>
-<blockquote>
-<p>5^3 : 4617 ÷ 125 = 36.936, so we get 36 additional factors of 5</p>
-</blockquote>
-<blockquote>
-<p>5^4 : 4617 ÷ 625 = 7.3872, so we get 7 additional factors of 5</p>
-</blockquote>
-<blockquote>
-<p>5^5 : 4617 ÷ 3125 = 1.47744, so we get 1 more factor of 5</p>
-</blockquote>
-<blockquote>
-<p>5^6 : 4617 ÷ 15625 = 0.295488, which is less than 1, so stop here.</p>
-</blockquote>
-<blockquote>
-<p>Then 4617! has 923 + 184 + 36 + 7 + 1 = 1151 trailing zeroes.<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">long</span> i = <span class="number">5</span>; n / i&gt;<span class="number">0</span>; i *= <span class="number">5</span>)&#123;</span><br><span class="line">        result += (n / i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>The ZERO comes from 10.<br>Since 10 = 2 * 5<br>How many multiples of 5 are there in the numbers from 1 to 100?<br>because 100 ÷ 5 = 20, so, there are twenty multiples of 5 between 1 and 100.<br>but wait, actually 25 is 5×5, so each multiple of 25 has an extra factor of 5, e.g. 25 × &gt;4 = 100，which introduces extra of zero.<br>So, we need know how many multiples of 25 are between 1 and 100? Since 100 ÷ 25 = 4, &gt;there are four multiples of 25 between 1 and 100.<br>Finally, we get 20 + 4 = 24 trailing zeroes in 100!<br>The above example tell us, we need care about 5, 5×5, 5×5×5, 5×5×5×5 ….<br>By given number 4617.<br>5^1 : 4617 ÷ 5 = 923.4, so we get 923 factors of 5<br>5^2 : 4617 ÷ 25 = 184.68, so we get 184 additional factors of 5<br>5^3 : 4617 ÷ 125 = 36.936, so we get 36 additional factors of 5<br>5^4 : 4617 ÷ 625 = 7.3872, so we get 7 additional factors of 5<br>5^5 : 4617 ÷ 3125 = 1.47744, so we get 1 more factor of 5<br>5^6 : 4617 ÷ 15625 = 0.295488, which is less than 1, so stop here.<br>Then 4617! has 923 + 184 + 36 + 7 + 1 = 1151 trailing zeroes.<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">long</span> i = <span class="number">5</span>; n / i&gt;<span class="number">0</span>; i *= <span class="number">5</span>)&#123;</span><br><span class="line">        result += (n / i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 
     </article>
@@ -590,7 +547,7 @@ top:30vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-8-2018-kadane’s-algorithm"><span class="toc-number">1.</span> <span class="toc-text">10/8/2018 kadane’s algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-9-2018"><span class="toc-number">2.</span> <span class="toc-text">10/9/2018</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-8-2018-kadane’s-algorithm"><span class="toc-number">1.</span> <span class="toc-text">10/8/2018 kadane’s algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-9-2018"><span class="toc-number">2.</span> <span class="toc-text">10/9/2018</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Factorial-Trailing-Zeroes"><span class="toc-number"></span> <span class="toc-text">Factorial Trailing Zeroes</span></a>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
