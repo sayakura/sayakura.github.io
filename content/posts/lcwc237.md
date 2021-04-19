@@ -10,8 +10,8 @@ tags:
 categories: 
     - algorithm
 series: []
-date: 2021-04-18T21:48:51-07:00
-lastmod: 2021-04-18T21:48:51-07:00
+date: '2021-04-18T21:48:51-07:00'
+lastmod: '2021-04-18T21:48:51-07:00'
 featuredVideo:
 featuredImage:
 draft: false
