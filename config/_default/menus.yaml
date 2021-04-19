@@ -1,0 +1,5 @@
+main:
+  - name: Posts
+    url: /posts/
+    weight: 2
+ 
