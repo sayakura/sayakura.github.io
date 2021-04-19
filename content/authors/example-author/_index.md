@@ -1,21 +1,24 @@
 ---
 title: Kura Peng
+draft: false
 role: Software Engineer
-avatar: images/icon.png
-bio: A programming generalist in with experiences of system programming , network programming, and full-stack web development.
+avatar: images/kura.jpeg
+bio: A programming generalist with experiences of system programming , network programming, and full-stack web development.
 organization:
   name: Remote
-  url: https://example.com/
 social:
   - icon: envelope
     iconPack: fas
-    url: mailto:example@example.com
-  - icon: twitter
-    iconPack: fab
-    url: https://example.com/
+    url: mailto:linra.kura@gmail.com
   - icon: github
     iconPack: fab
-    url: https://example.com/
+    url: https://github.com/sayakura
+  - icon: linkedin
+    iconPack: fab
+    url: https://www.linkedin.com/in/kurapeng/
+  - icon: youtube
+    iconPack: fab
+    url: https://www.youtube.com/channel/UCGARoRd5S3jD_ZAls8Tmsvg
 ---
 
 ## About Me
