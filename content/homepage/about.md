@@ -71,6 +71,7 @@ Top 5% of performers at coding bootcamp with less than 1% acceptance rate
 C++ • C • Python • JavaScript • HTML5 • CSS3 • Node.js • React.js • Express.js • Next.js 
 
 **Databases & Tools**:
+
 PostgreSQL • MongoDB • Git • Docker • Firebase • GCP • AWS • Redis • Apache Kafka • ZooKeeper 
 
 **Topics & Concepts**:
