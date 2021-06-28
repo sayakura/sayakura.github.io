@@ -51,10 +51,12 @@ My name is Kura, I am a Self-taught Software Engineer currently working at Googl
 ➤ Programming generalist with experiences of system programming , network programming, full-stack web development, and mobile development
 
 ❯ Leetcode ❮
+
 Number of Problems solved(620+): top 1~2%
 Contest: typically, top 5~10%
 
 ❯ TripleByte ❮
+
 Top 10% of performers on Triplebyte Assessment in terms of combination of practical coding skills, systems knowledge, and Algo/DS
 
 ## Skills  
