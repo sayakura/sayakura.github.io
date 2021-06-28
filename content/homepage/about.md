@@ -3,9 +3,10 @@ title: Kura Peng
 draft: false
 role: Software Engineer
 avatar: images/kura.jpeg
-bio: A programming generalist with experiences of system programming , network programming, and full-stack web development.
+bio: A programming generalist with experiences of System Programming , Network Programming, Full-stack Web Development,
+ and Android Development.
 organization:
-  name: Remote
+  name: Google
 social:
   - icon: envelope
     iconPack: fas
@@ -45,35 +46,26 @@ widget:
 ---
 
 ## About Me
-I am Kura, a Software Engineer that loves Algorithm and System design! 
-I enjoyed solving algorithm problems and writing technical articles, I will be releasing more posts in this website :)
+My name is Kura, I am a Self-taught Software Engineer currently working at Google 
 
-**ACCOMPLISHMENTS**
+➤ Programming generalist with experiences of system programming , network programming, full-stack web development, and mobile development
 
-**Leetcode**:
+❯ Leetcode ❮
+Number of Problems solved(620+): top 1~2%
+Contest: typically, top 5~10%
 
-  - Number of Problems solved (560+) : top 1~2%, I ranked ~15000 out of 1 million users on Leetcode
-  - Contest : typically, top 5~10% among competitive programmers across the world
-
-**TripleByte**:
-
+❯ TripleByte ❮
 Top 10% of performers on Triplebyte Assessment in terms of combination of practical coding skills, systems knowledge, and Algo/DS
-
-**Coding Bootcamp**:
-
-Top 5% of performers at coding bootcamp with less than 1% acceptance rate
-
 
 ## Skills  
 
-**Languages, Frameworks, & Libraries**:
+**❏ Languages, Frameworks, & Libraries**
 
-C++ • C • Python • JavaScript • HTML5 • CSS3 • Node.js • React.js • Express.js • Next.js 
+C++ • C • Python • JavaScript • HTML5 • CSS3 • Node.js • React.js • Express.js • Next.js • Hadoop
 
-**Databases & Tools**:
+**❏ Databases & Tools**
+PostgreSQL • MongoDB • Git • Docker • Firebase • GCP • AWS • Redis • Apache Kafka • ZooKeeper
 
-PostgreSQL • MongoDB • Git • Docker • Firebase • GCP • AWS • Redis • Apache Kafka • ZooKeeper 
-
-**Topics & Concepts**:
+**❏ Topics & Concepts**
 
 Analysis of Algorithms • Operating System • Web Development • System/Networking Programing • MicroService Architecture Design • Software Development • Distributed System Design • UNIX/Linux Environment • OO Design
