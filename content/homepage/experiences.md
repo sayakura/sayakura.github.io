@@ -4,6 +4,14 @@ draft: false
 experiences:
   - title: Software Engineer
     organization:
+      name:  Google
+    dates: 'Jun 2021 - Present'
+    location: Mountain view, CA
+    writeup: >
+      NDA
+  
+  - title: Software Engineer
+    organization:
       name:  PilotCity
     dates: 'Aug 2018 - Mar 2020'
     location: San Leandro, CA
@@ -22,20 +30,6 @@ experiences:
 
       - Code review and mentor other engineers, optimized code, and fixed bugs from all engineering teams
       
-  - title: Full Stack Developer
-    organization:
-      name: Freelancing
-    dates: '2017 - 2018'
-    location: San Leandro, CA
-    writeup: >
-      - Developed, and maintained websites and applications utilizing HTML5, CSS, Vuejs, and Firebase to meet
-      my client’s needs, making sure it is highly available
-
-      - Built e-commerce website for Eyeglass20 to facilitate online sales for their eyewear products,
-      incorporating secure login, dynamic inventory, and admin panel
-
-      - Built company and service demonstration website for ANBRepair, a repair shop for mobile devices
-
   - title: Academic Program Intern - Software Lead
     organization:
       name: OSIsoft
